@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1>Welcome to the Restaurant Menu App</h1>
+    <form action="/menu" method="GET">
+      <label for="restaurant">Choose a restaurant:</label>
+      <select name="restaurant" id="restaurant">
+        <option value="gourmet">The Gourmet Bistro</option>
+        <option value="spicy">Spicy Kitchen</option>
+        <option value="healthy">Healthy Eats</option>
+        <option value="comfort">Comfort Diner</option>
+        <option value="bakery">Sweet Tooth Bakery</option>
+      </select>
+      <button type="submit">Get Menu</button>
+    </form>
+    <div>
+      <h2>Random Menu Item</h2>
+      <p id="random-item"></p>
+    </div>
+    <a href="/menu=alerts">Menu Alerts</a>
+  </body>
+</html>
